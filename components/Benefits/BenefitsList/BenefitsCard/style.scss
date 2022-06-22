@@ -1,0 +1,24 @@
+.BenefitsCard {
+  border: 1px solid #FCC657;
+  border-radius: 1.575rem;
+  background-color: #ffffff;
+  height: 29.9rem;
+  width: 100%;
+  &--corporate {
+    height: 100% !important;
+    
+  }
+  @media (max-width: 600px) {
+    height: 32rem;
+  }
+  &--yellow {
+    background-color: #FCC657;
+  }
+  &--dark {
+    background: transparent;
+    border: 1px solid #fff;
+  }
+  &__box {
+    padding: 3.25rem 3.55rem;
+  }
+}

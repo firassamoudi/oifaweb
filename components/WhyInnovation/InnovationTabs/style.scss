@@ -1,0 +1,14 @@
+.InnovationTabs {
+  .MuiAppBar {
+    &-root {
+      background: transparent;
+      margin-bottom: 2.4rem;
+    }
+  }
+  .MuiTabs {
+    &-indicator {
+      background-color: #fbca66;
+      height: 3px;
+    }
+  }
+}

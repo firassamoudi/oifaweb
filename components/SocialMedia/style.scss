@@ -1,0 +1,61 @@
+.SocialMedia {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    &--v {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    margin: 0;
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+    border: 0.2rem solid #010c24;
+    border-radius: 0.898rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+
+    svg {
+      color: #010c24;
+      font-size: 2.5rem;
+      transition: all 0.4s;
+
+      @media (max-width: 500px) {
+        font-size: 15px;
+      }
+    }
+    @media (max-width: 500px) {
+      height: 26.6px;
+      width: 27.14px;
+      border-radius: 7.48px;
+    }
+    &:hover {
+      border-color: #ffdb43;
+      cursor: pointer;
+
+      svg {
+        color: #ffdb43;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 0.68rem;
+      @media (max-width: 500px) {
+        margin-right: 6.8px;
+      }
+    }
+    &--v {
+      &:not(:last-child) {
+        margin: 0 0 6.8px 0;
+        @media (max-width: 500px) {
+          margin: 0 0 6.8px 0;
+        }
+      }
+    }
+  }
+}

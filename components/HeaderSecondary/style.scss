@@ -1,0 +1,50 @@
+.HeaderSecondary {
+  &__box {
+    display: flex;
+    margin-top: 6.6rem;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 800px) {
+      justify-content: flex-start;
+    }
+
+    & > div {
+      max-width: 48.4rem;
+      margin-left: 3rem;
+      @media (max-width: 800px) {
+        max-width: 90%;
+        margin-left: 0;
+        margin-top: 4rem;
+      }
+      @media (max-width: 500px) {
+        max-width: 100%;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+    &-box {
+      min-height: 63.2rem;
+      flex-basis: 55.1rem;
+      @media (max-width: 800px) {
+        width: 100%;
+        flex-basis: unset;
+        height: 50rem;
+        min-height: unset;
+      }
+    }
+  }
+}

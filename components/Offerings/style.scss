@@ -1,0 +1,12 @@
+.Offerings {
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+  &__head {
+    max-width: 90.8rem;
+  }
+  &__body {
+    margin-top: 8.5rem;
+  }
+}

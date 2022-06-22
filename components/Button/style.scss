@@ -1,0 +1,61 @@
+.MuiButton-root.Button {
+  border-radius: 0.6rem;
+  background-color: #fcc657;
+  height: 55px;
+  padding: 0 3rem;
+
+  &.Mui-disabled {
+    opacity: 0.7;
+    background-color: #ebeef7;
+    border: 1px solid #ebeef7;
+    .MuiButton-label {
+      color: #c3c8d2;
+    }
+  }
+  .MuiButton-label {
+    font-family: "CircularStd";
+    font-weight: 500;
+    color: #000;
+    font-size: 14px;
+    text-transform: initial;
+    white-space: nowrap;
+  }
+  .Typography-root {
+    text-transform: initial;
+  }
+
+  &:hover {
+    background-color: #ffba2d;
+  }
+
+  &--small {
+    border-radius: 0.6rem;
+    height: 45px;
+    padding: 0 3rem;
+    font-size: 13px;
+  }
+
+  &--trans {
+    background-color: transparent;
+    padding: 0;
+    height: auto;
+    border-radius: 0;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    border: solid 1px #010c24;
+    border-radius: 0.6rem;
+    transition: all 0.4s;
+    .MuiButton-label {
+      color: #010c24;
+    }
+    &:hover {
+      background-color: #fcc657;
+      border-color: #fcc657;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.BlogCard {
+  width: 39.5rem;
+  border-radius: 1.8rem 1.8rem 1.98rem 1.98rem;
+  overflow: hidden;
+  &__img {
+    height: 28.3rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__body {
+    height: 14.3em;
+    padding: 2.641rem 3rem;
+    border: 0.9px solid #ededed;
+  }
+}

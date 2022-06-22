@@ -1,0 +1,71 @@
+.WhyInnovation {
+  display: flex;
+  min-height: 62.9rem;
+  margin-bottom: 4rem;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  @media (max-width: 500px) {
+    height: unset;
+  }
+  &__img {
+    flex-basis: 50.6rem;
+    max-height: 62.9rem;
+    @media (max-width: 500px) {
+      flex-basis: unset;
+      width: 100%;
+      height: 29.3rem;
+      margin-top: 3rem;
+    }
+  }
+  &__composition {
+    height: 100%;
+    position: relative;
+    &-img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      border-bottom-left-radius: 100px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+      }
+    }
+  }
+
+  &__content {
+    flex-basis: calc(100% - 50.6rem);
+
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3.5rem;
+    @media (max-width: 800px) {
+      padding-right: 0;
+    }
+    @media (max-width: 500px) {
+      padding-top: 0;
+      padding-right: 0;
+      flex-basis: 100%;
+    }
+    &-box {
+      max-width: 47rem;
+      margin-left: 3rem;
+      @media (max-width: 500px) {
+        max-width: unset;
+      }
+    }
+  }
+  &__tabs {
+    margin-top: 3rem;
+    @media (max-width: 500px) {
+      margin-top: 3.88rem;
+    }
+  }
+}

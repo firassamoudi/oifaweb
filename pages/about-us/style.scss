@@ -1,0 +1,29 @@
+.AboutUs {
+  background: #fff;
+  &__header {
+    padding-bottom: 9.8rem;
+
+    @media (max-width: 500px) {
+      padding-top: 5.2rem;
+      padding-bottom: 5.2rem;
+    }
+  }
+  &__OurStory {
+    margin-top: 13.5rem;
+    margin-bottom: 7.2rem;
+    @media (max-width: 500px) {
+      margin-top: 11rem;
+    }
+  }
+  &__OurValues {
+    background: #000020;
+    padding: 9.9rem 0 9.9rem 0;
+    @media (max-width: 500px) {
+      padding: 6.16rem 0 6.33rem 0;
+    }
+  }
+  &__BehindOifa {
+    margin-top: 7.2rem;
+    margin-bottom: 9.8rem;
+  }
+}

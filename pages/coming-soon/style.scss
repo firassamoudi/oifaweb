@@ -1,0 +1,300 @@
+.inputText {
+  width: 100%;
+
+  &__input {
+    height: 8rem;
+    padding: 2.7rem;
+    font-size: 1.8rem;
+    font-family: "CircularStd";
+    border: none;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #acb3c7;
+    }
+  }
+}
+
+.Logo {
+  height: 5.1rem;
+  width: 14rem;
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.subscribe {
+  position: relative;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07);
+    display: flex;
+    position: relative;
+    border-radius: 1.5rem 0 0 1.5rem;
+    overflow: hidden;
+  }
+
+  &__btn {
+    width: 17.5rem;
+    height: 100%;
+    border-radius: 0 1.5rem 1.5rem 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+  }
+
+  &__input {
+    position: relative;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: none;
+    border-right: none;
+    overflow: hidden;
+    width: calc(100% - 17.5rem);
+
+    &.__error {
+      border-color: red;
+    }
+
+    input {
+      font-family: "CircularStd";
+    }
+  }
+
+  &__error {
+    font-family: "CircularStd";
+    font-size: 1.6rem;
+    color: red;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    z-index: 4;
+  }
+
+  svg {
+    margin-right: 1.7rem;
+    font-size: 4rem;
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  background: rgb(3, 37, 108) !important;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background: rgb(3, 37, 108) !important;
+  }
+
+  &--primary {
+    padding: 1rem;
+    font-family: "CircularStd-Bold";
+    color: #ffffff;
+    font-size: 1.8rem;
+    border: none;
+
+    @media (max-width: 850px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.ComingSoon {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+
+  &__logo {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+
+    &__inner {
+      padding: 0 1rem;
+      width: 1440px;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  &__box {
+    max-width: 78.4rem;
+  }
+
+  .bg {
+    position: relative;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &-layer {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 11, 35, 0.81);
+      z-index: 2;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .__title {
+    color: rgb(255, 255, 255);
+    font-size: 8rem;
+    line-height: 8.1rem;
+    margin: 0px 0px 4rem;
+    letter-spacing: -0.36rem;
+    font-family: "CircularStd";
+    font-weight: 900;
+    font-style: normal;
+
+    @media (max-width: 1285px) {
+      font-size: 6.5rem;
+      margin: 0 0 3.5rem 0;
+    }
+  }
+}
+
+.NavigationComingSoon {
+  position: absolute;
+  color: #fff;
+}
+
+.dotsWave {
+  width: fit-content;
+  &__container {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__dot {
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+.Typography-root {
+  margin: 0;
+  &.Typography {
+    //- Font Faces
+    &-Book {
+      font-family: "CircularStd";
+      font-weight: normal;
+      font-style: normal;
+    }
+    &-BookItalic {
+      font-family: "CircularStd";
+      font-weight: normal;
+      font-style: italic;
+    }
+    &-Medium {
+      font-family: "CircularStd";
+      font-weight: 500;
+      font-style: normal;
+    }
+    &-MediumItalic {
+      font-family: "CircularStd";
+      font-weight: 500;
+      font-style: italic;
+    }
+    &-Bold {
+      font-family: "CircularStd";
+      font-weight: bold;
+      font-style: normal;
+    }
+    &-BoldItalic {
+      font-family: "CircularStd";
+      font-weight: bold;
+      font-style: italic;
+    }
+    &-Black {
+      font-family: "CircularStd";
+      font-weight: 900;
+      font-style: normal;
+    }
+    &-BlackItalic {
+      font-family: "CircularStd";
+      font-weight: 900;
+      font-style: italic;
+    }
+
+    //- Display Helpers
+    &-initial {
+      display: initial;
+    }
+    &-inline {
+      display: inline;
+    }
+    &-block {
+      display: block;
+    }
+
+    //- Align helpes
+    &-align-inherit {
+      text-align: inherit;
+    }
+    &-align-left {
+      text-align: left;
+    }
+    &-align-center {
+      text-align: center;
+    }
+    &-align-right {
+      text-align: right;
+    }
+    &-align-justify {
+      text-align: right;
+    }
+
+    //- Wrap Helpers
+    &-noWrap {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &-noSpace {
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,218 @@
+html {
+  font-size: 6px;
+  line-height: unset;
+  width: 100%;
+  @media (min-width: 601px) {
+    font-size: 7px;
+  }
+  @media (min-width: 750px) {
+    font-size: 8px;
+  }
+  @media (min-width: 961px) {
+    font-size: 9px;
+  }
+  @media (min-width: 1281px) {
+    font-size: 62.5%; //10px
+  }
+  @media (min-width: 1921px) {
+    //font-size: 62.5%; //10px
+  }
+}
+
+body {
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 0 !important;
+  background: #f2f4f6;
+  overflow-x: hidden;
+  //background: #007cba !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#app-root {
+  position: relative;
+  z-index: 9;
+}
+
+#nprogress {
+  .bar {
+    position: fixed;
+    height: 2px;
+    width: 100vw;
+    background: #03256c;
+    z-index: 999;
+  }
+  .peg {
+    box-shadow: 0 0 10px #03256c, 0 0 5px #03256c;
+  }
+  .spinner-icon {
+    display: none;
+    border-top-color: #03256c;
+    border-left-color: #03256c;
+  }
+}
+
+.ScrollbarsCustom-Wrapper {
+  right: 0 !important;
+}
+.ScrollbarsCustom-Scroller {
+  //transition: all 1s ease;
+  scroll-behavior: smooth;
+}
+.ScrollbarsCustom-Track {
+  position: absolute;
+  z-index: 999;
+  &.ScrollbarsCustom-TrackY {
+    top: 3px !important;
+    height: calc(100% - 6px) !important;
+    width: 3px !important;
+    background-color: transparent !important;
+    margin-right: 1px;
+    margin-right: 2px;
+    .ScrollbarsCustom-Thumb {
+      &.ScrollbarsCustom-ThumbY {
+        background-color: #020c1f !important;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+//- Time Picker
+.MuiPickersBasePicker-pickerView {
+  .MuiPickersClock-container {
+    margin: 0;
+    .MuiPickersClockNumber-clockNumber {
+      font-family: "Galano-Medium";
+      font-size: 1.7rem;
+      line-height: 3rem;
+    }
+    //- Blues
+    .MuiPickersClock-pin,
+    .MuiPickersClockPointer-pointer,
+    .MuiPickersClockPointer-noPoint {
+      background-color: rgb(245, 189, 52);
+    }
+    .MuiPickersClockPointer-thumb {
+      border: 14px solid rgb(245, 189, 52);
+    }
+  }
+}
+
+//- Tooltips
+.MuiTooltip-popper {
+  .MuiTooltip-tooltip {
+    color: rgb(30, 46, 65);
+    font-family: "Galano-Semi-Bold";
+    font-size: 1.2rem;
+    background-color: #f5bd34;
+    margin: 0;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &--std {
+    padding: 0 10rem;
+    @media (max-width: 1028px) {
+      padding: 0 5rem;
+    }
+    @media (max-width: 900px) {
+      padding: 0 2.75rem;
+    }
+    @media (max-width: 500px) {
+      padding: 0 3.14rem;
+    }
+  }
+  &--small {
+    padding: 0 26rem;
+  }
+  &--med {
+    padding: 0 23.8rem;
+    @media (max-width: 500px) {
+      padding: 0 3.14rem;
+    }
+  }
+  &--pl {
+    padding: 0 0 0 10rem;
+  }
+  &--xl {
+    padding: 0 11.9rem;
+  }
+  &--l {
+    padding: 0 17.6rem;
+    @media (max-width: 500px) {
+      padding: 0 3.14rem;
+    }
+  }
+  &--s {
+    padding: 0 30.8rem;
+    @media (max-width: 1200px) {
+      padding: 0 25rem;
+    }
+    @media (max-width: 1028px) {
+      padding: 0 20rem;
+    }
+    @media (max-width: 900px) {
+      padding: 0 15rem;
+    }
+    @media (max-width: 500px) {
+      padding: 0 3.14rem;
+    }
+  }
+}
+
+.chv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ScrollbarsCustom-Wrapper {
+  right: 0 !important;
+}
+
+.ScrollbarsCustom-Scroller {
+}
+
+.ScrollbarsCustom-Track {
+  position: absolute;
+  border-radius: 1px !important;
+  z-index: 999;
+
+  &.ScrollbarsCustom-TrackY {
+    top: 3px !important;
+    height: calc(100% - 6px) !important;
+    width: 6px !important;
+    width: 4px !important;
+    background-color: transparent !important;
+    margin-right: 1px !important;
+
+    .ScrollbarsCustom-Thumb {
+      &.ScrollbarsCustom-ThumbY {
+        background-color: #03256c !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        background-color: #010620 !important;
+        border-radius: 3px !important;
+        border-radius: 2px !important;
+      }
+    }
+  }
+}

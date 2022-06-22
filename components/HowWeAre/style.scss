@@ -1,0 +1,45 @@
+.HowWeAre {
+  display: flex;
+  height: 72.4rem;
+  padding-top: 6.5rem;
+  padding-bottom: 8.3rem;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    height: unset;
+  }
+
+  &__info {
+    width: 40%;
+    padding-top: 6.1rem;
+
+    @media (max-width: 500px) {
+      width: 100%;
+      margin-bottom: 5.8rem;
+      max-width: 69.8rem;
+      padding-top: 0;
+    }
+    p:last-child {
+      @media (max-width: 900px) {
+        max-width: 80%;
+      }
+      @media (max-width: 700px) {
+        max-width: 70%;
+      }
+      @media (max-width: 500px) {
+        max-width: 80%;
+      }
+    }
+  }
+  &__map {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 500px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

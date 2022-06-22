@@ -1,0 +1,16 @@
+.Faq {
+  .MuiSvgIcon-root {
+    font-size: 3rem !important;
+  }
+
+  .Accordion {
+    .MuiAccordion-root{
+      background: transparent;
+      margin-top: 3.9rem;
+    }
+    @media (max-width: 500px) {
+      padding: 0;
+    }
+
+  }
+}

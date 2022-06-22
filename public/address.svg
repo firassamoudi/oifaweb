@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fill 1</title>
+    <defs>
+        <filter x="-2.1%" y="-1.0%" width="104.3%" height="102.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.103921957 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Home-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Book-a-demo-mobile-version" transform="translate(-18.000000, -1556.000000)" fill="#CDD3E2">
+            <g id="Group-36-Copy" filter="url(#filter-1)" transform="translate(0.000000, 1087.000000)">
+                <g id="Group-34-Copy" transform="translate(22.000000, 471.000000)">
+                    <g id="Group-33" transform="translate(0.000000, 2.000000)">
+                        <path d="M3.33456186,5.74152998 C3.32991444,7.13592706 4.52151556,8.27073527 6.00119436,8.28103547 C7.45418946,8.29112729 8.66093116,7.14845996 8.66705509,5.75671236 C8.67319378,4.34817483 7.48719216,3.19940478 6.02403036,3.19672044 C4.52836636,3.19395699 3.33933038,4.31903062 3.33456186,5.74152998 M5.99249791,8.80148654e-07 C8.89019832,-0.00154624571 11.4676004,2.03673244 11.9109941,4.7559556 C12.2923553,7.09505372 11.4435444,8.98636105 9.45443515,10.4019837 C8.49360273,11.085786 7.69008844,11.8967631 7.08074269,12.8811169 C6.92473841,13.1330551 6.76666952,13.3839215 6.60703651,13.6338651 C6.29703002,14.1191653 5.70204279,14.124107 5.39919993,13.6362764 C4.93713072,12.8918934 4.44809627,12.1678727 3.8270197,11.5304808 C3.34289655,11.0336003 2.79314336,10.6107562 2.24204505,10.1851139 C0.918276678,9.162685 0.165846197,7.83506061 0.0220106942,6.21664905 C-0.240102763,3.2669217 1.86531365,0.648646466 4.92199014,0.110178183 C5.27391476,0.0481983641 5.63544301,0.0355463837 5.99249791,8.80148654e-07" id="Fill-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

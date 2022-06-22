@@ -1,0 +1,12 @@
+.challenge {
+  &__header {
+    background: #ecf6ff;
+    padding-bottom: 6.4rem;
+    padding-top: 10.4rem;
+    margin-bottom: 6rem;
+    @media (max-width: 500px) {
+      padding-top: 5.2rem;
+      padding-bottom: 5.2rem;
+    }
+  }
+}

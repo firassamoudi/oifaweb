@@ -1,0 +1,101 @@
+.Footer {
+  background: #fff;
+  padding-top: 8rem;
+  &__box {
+    display: flex;
+    padding-bottom: 5.6rem;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+    .Footer__col {
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+  &__col {
+    &:not(:last-child) {
+      @media (max-width: 500px) {
+        margin-bottom: 5rem;
+      }
+    }
+    &-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &-item {
+      padding: 0;
+      display: flex;
+      align-items: flex-start;
+
+      &:hover {
+        cursor: pointer;
+        color: #fcc657 !important;
+      }
+      p {
+        transition: all 0.4s;
+        &:hover {
+          color: #010c24 !important;
+        }
+      }
+
+      img {
+        display: inline-block;
+        margin-right: 1.4rem;
+      }
+      &:not(:last-child) {
+        margin: 0 0 2.1rem 0;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    &--logo {
+      width: 29%;
+      &:first-child {
+        @media (max-width: 500px) {
+          margin-bottom: 6.25rem;
+        }
+      }
+
+      .Logo {
+        transform: translateY(-36%);
+        @media (max-width: 500px) {
+          transform: translateY(0);
+        }
+      }
+    }
+    &--product {
+      width: 20%;
+    }
+    &--help {
+      width: 23%;
+    }
+    &--Reach-us {
+      width: 28%;
+      max-width: 31rem;
+      @media (max-width: 500px) {
+        max-width: 50rem;
+      }
+    }
+  }
+  &__divider.MuiDivider-root {
+    height: 1px;
+    border: 1px solid #e6e9f0;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0;
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__social {
+    @media (max-width: 500px) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.ChallengeAction {
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4.1rem;
+    @media (max-width: 500px) {
+      background: #f6fbff;
+      justify-content: flex-start;
+      padding-bottom: 3rem;
+    }
+    &-box {
+      max-width: 83rem;
+      @media (max-width: 500px) {
+        max-width: 56.7rem;
+      }
+    }
+    &-para {
+      max-width: 79.2rem;
+    }
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+    .ChActionCard:first-child {
+      margin-bottom: 2.16rem;
+    }
+  }
+}

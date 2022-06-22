@@ -1,0 +1,11 @@
+.StepsList {
+  &__step {
+    &:nth-child(4) {
+      .Step__left--cor {
+        @media (max-width: 700px) {
+          border-left: 1px solid white;
+        }
+      }
+    }
+  }
+}

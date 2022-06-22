@@ -1,0 +1,36 @@
+.ContactUs {
+  background: #fff;
+  &__box {
+    display: flex;
+    margin-bottom: 10rem;
+    margin-top: 10.2rem;
+
+    @media (max-width: 730px) {
+      flex-direction: column;
+    }
+    @media (max-width: 500px) {
+      margin-top: 5rem;
+    }
+  }
+  &__img {
+    &-box {
+      width: 50%;
+      @media (max-width: 730px) {
+        width: 100%;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  &__form {
+    &-box {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 730px) {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+}

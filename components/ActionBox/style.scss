@@ -1,0 +1,18 @@
+.ActionBox {
+  .MuiButton-root.Button {
+    &--ghost {
+      &:hover {
+        border: 1px solid #fcc657;
+        background: #010c24;
+        .MuiButton-label {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+  }
+}

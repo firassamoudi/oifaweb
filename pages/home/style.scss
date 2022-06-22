@@ -1,0 +1,98 @@
+.Home {
+  background: #fff;
+
+  &__header {
+    padding-bottom: 9.8rem;
+    @media (max-width: 500px) {
+      padding-top: 5.2rem;
+      padding-bottom: 5.2rem;
+    }
+  }
+
+  &__HowWeAre {
+    background: #fbfeff;
+    @media (max-width: 500px) {
+      padding-top: 5.66rem;
+      padding-bottom: 4.83rem;
+    }
+  }
+
+  &__clients {
+    margin: 2.5rem 0;
+    background: #fff;
+    @media (max-width: 500px) {
+      margin: 0;
+    }
+  }
+
+  &__WhyInnovation {
+    padding: 10.6rem 0;
+    background: #fff;
+    @media (max-width: 500px) {
+      padding: 10rem 0 14.66rem 0;
+    }
+  }
+
+  &__ChallengeAction {
+    //padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+    padding-bottom: 6rem;
+    background: #fbfeff;
+    @media (max-width: 500px) {
+      padding-top: 0;
+      padding-bottom: 15.33rem;
+    }
+  }
+
+  &__SliderHome {
+    padding-top: 15.1rem;
+    padding-bottom: 15.1rem;
+    background: #fff;
+    @media (max-width: 500px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__Faq {
+    padding-top: 12.6rem;
+    padding-bottom: 12rem;
+    background: #fbfeff;
+    display: flex;
+    @media (max-width : 600px){
+      flex-direction: column;
+    }
+    & > div {
+      width: 50%;
+      @media (max-width : 600px){
+        width: 100%;
+      }
+    }
+    & > div:first-child {
+      padding-right: 19rem;
+      @media (max-width : 900px){
+        padding-right: 10rem;
+      }
+      @media (max-width : 600px){
+        padding-right: 0;
+        margin-bottom: 15rem;
+      }
+    }
+    & > div:last-child {
+      padding-left: 19rem;
+      @media (max-width : 900px){
+        padding-left: 10rem;
+      }
+      @media (max-width : 600px){
+        padding-left: 0;
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 10.62rem;
+      padding-bottom: 10.62rem;
+    }
+  }
+  &__RequestADemo {
+    margin-bottom: 10.8rem;
+  }
+}

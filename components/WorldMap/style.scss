@@ -1,0 +1,12 @@
+.country {
+  &--TUN {
+    fill: red;
+    transition: all 3s;
+  }
+  &--MAR {
+    fill: green;
+    transition: all 3s;
+  }
+}
+
+

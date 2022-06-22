@@ -1,0 +1,130 @@
+.BehindOifaCard {
+  display: flex;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    a {
+      color: #fbca66;
+    }
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+  &--flip {
+    flex-direction: row-reverse;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    width: calc(100% - 3rem);
+    height: calc(100% - 3.2rem);
+    position: absolute;
+    right: 3.4rem;
+    bottom: 0;
+    border-bottom-left-radius: 100px;
+    overflow: hidden;
+    @media (max-width: 500px) {
+      width: calc(100% - 1rem);
+      height: calc(100% - 1rem);
+      right: 1rem;
+      border-bottom-left-radius: 2.56rem;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    &-box {
+      flex-basis: 41.9rem;
+      @media (max-width: 500px) {
+        flex-basis: unset;
+        display: flex;
+        margin-bottom: 3.66rem;
+      }
+    }
+    &-composition {
+      width: 100%;
+      height: 38.5rem;
+      position: relative;
+      @media (max-width: 500px) {
+        width: 12.33rem;
+        height: 11.33rem;
+      }
+    }
+    &-under {
+      background: #fbca66;
+      width: calc(100% - 3rem);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom-left-radius: 100px;
+      overflow: hidden;
+      @media (max-width: 500px) {
+        width: calc(100% - 1rem);
+        border-bottom-left-radius: 2.56rem;
+      }
+    }
+  }
+  &__content {
+    flex-basis: calc(100% - 41.9rem);
+    padding: 4.2rem 0 4.2rem 6.9rem;
+    @media (max-width: 700px) {
+      padding-left: 3rem;
+    }
+    @media (max-width: 500px) {
+      padding: 0;
+    }
+    &--flip {
+      padding: 4.2rem 7.3rem 0 0;
+      @media (max-width: 700px) {
+        padding-right: 3.4rem;
+      }
+      @media (max-width: 500px) {
+        padding: 0;
+      }
+    }
+  }
+  &__country {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    &--mobile {
+      margin-left: 2.6rem;
+    }
+    &__flag {
+      width: 28px;
+      height: 19px;
+      margin-right: 1.1rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.BehindOifa {
+  &__head {
+    margin-bottom: 5.8rem;
+    @media (max-width: 500px) {
+      margin-bottom: 4.5rem;
+    }
+  }
+  &__cards > div:first-child {
+    margin-bottom: 10rem;
+    @media (max-width: 500px) {
+      margin-bottom: 4.5rem;
+    }
+  }
+}

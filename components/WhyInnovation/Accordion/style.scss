@@ -1,0 +1,47 @@
+.Accordion-innovation {
+  //max-width: 40.5rem;
+  header {
+    margin: 5rem !important;
+  }
+  background: transparent;
+  .MuiAccordion-root {
+    padding: 0rem 2rem 0rem 2rem;
+    &:before {
+      display: none;
+    }
+    &.Mui-expanded {
+      //padding: 2.3rem 0;
+      background: rgba(#fcc657, 0.15);
+      border-radius: 4px;
+    }
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: none;
+  }
+  .MuiButtonBase-root {
+    justify-content: space-between;
+  }
+  .MuiAccordionSummary-content {
+    margin: 1.4rem 0;
+    flex-grow: unset;
+    &.Mui-expanded {
+      margin: 0rem 0 0 0;
+    }
+  }
+  .MuiAccordionSummary-root {
+    padding: 0;
+    &.Mui-expanded {
+      min-height: 0;
+      padding-top: 0.6rem;
+    }
+  }
+  .MuiAccordionDetails-root {
+    padding: 0 0 4.16rem 0rem;
+  }
+  &__summary {
+  }
+
+  &__details {
+    display: flex;
+  }
+}

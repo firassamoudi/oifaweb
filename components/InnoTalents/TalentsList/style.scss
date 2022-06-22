@@ -1,0 +1,33 @@
+.TalentsList {
+  display: flex;
+  margin: 0 -1.6rem;
+  flex-wrap: wrap;
+  margin-bottom: -5.5rem;
+  @media (max-width: 1000px) {
+    margin: 0 -1rem;
+  }
+  @media (max-width: 500px) {
+    margin: 0 -2rem;
+  }
+  @media (max-width: 400px) {
+    margin: 0;
+  }
+
+  &__item {
+    width: calc((100% - 10rem) / 3);
+    margin: 0 1.6rem 5.5rem 1.6rem;
+
+    @media (max-width: 1000px) {
+      width: calc((100% - 7rem) / 3);
+      margin: 0 1rem 5.5rem 1rem;
+    }
+    @media (max-width: 500px) {
+      width: calc((100% - 5rem) / 2);
+      margin: 0 1rem 5.5rem 1rem;
+    }
+    @media (max-width: 400px) {
+      width: 100%;
+      margin: 0 0 5.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+// - Base
+@import "./base.scss";
+
+// - Components
+@import "../layout/style.scss";
+
+// ...
+@import "./components/Logo/style.scss";
+@import "./components/AboutUsHeader/style.scss";
+@import "../components/Accordion/style.scss";
+@import "../components/BehindOifa/BehindOifaCard/style.scss";
+@import "../components/BlogCardsList/style.scss";
+@import "../components/BlogCardsList/BlogCard/style.scss";
+@import "../components/BlogSections/SectionPara/style.scss";
+@import "../components/BookForm/style.scss";
+@import "../components/ContactForm/style.scss";
+@import "../components/ChallengeAction/style.scss";
+@import "../components/ChallengeAction/ChActionCard/style.scss";
+@import "../components/Clients/style.scss";
+@import "../components/Faq/style.scss";
+@import "../components/Header/style.scss";
+@import "../components/HowWeAre/style.scss";
+@import "../components/OurStory/style.scss";
+@import "../components/OurValues/style.scss";
+@import "../components/OurValues/OurValuesCard/style.scss";
+@import "../components/RequestADemo/style.scss";
+@import "../components/ResourceHeader/style.scss";
+@import "../components/ResourceHeader/Social/style.scss";
+@import "../components/SliderHome/style.scss";
+@import "../components/SliderHome/SliderItem/style.scss";
+@import "../components/Typography/style.scss";
+@import "../components/WhyInnovation/style.scss";
+@import "../components/WhyInnovation/Accordion/style.scss";
+@import "../components/WhyInnovation/InnovationTabs/style.scss";
+@import "../components/WorldMap/style.scss";
+@import "../components/Button/style.scss";
+@import "../components/Entry/style.scss";
+@import "../components/Entry/EntryText/style.scss";
+@import "../components/Entry/EntryEmail/style.scss";
+@import "../components/SignUpList/style";
+@import "../components/SignUpList/SignUpCard/style";
+@import "./layout/Navigation/style.scss";
+@import "../components/ChallengeList/style.scss";
+@import "../components/ChallengeList/ChallengeCard/style.scss";
+@import "../layout/Footer/style.scss";
+@import "../components/SocialMedia/style.scss";
+@import "../components/HeaderSecondary/style.scss";
+@import "../components/InnoTalents/style.scss";
+@import "../components/InnoTalents/TalentsList/style.scss";
+@import "../components/InnoTalents/TalentsList/TalentCard/style.scss";
+@import "../components/Benefits/style.scss";
+@import "../components/Benefits/BenefitsList/style.scss";
+@import "../components/Benefits/BenefitsList/BenefitsCard/style.scss";
+@import "../components/JourneySteps/style.scss";
+@import "../components/Offerings/style.scss";
+@import "../components/Offerings/OfferingsList/style.scss";
+@import "../components/Offerings/OfferingsList/OfferingsCard/style.scss";
+@import "../components/ActionBox/style.scss";
+@import "../components/TimeLine/style.scss";
+@import "../components/TimeLine/StepsList/style.scss";
+@import "../components/TimeLine/StepCard/style.scss";
+@import "../components/TimeLine/StepsList/Step/style.scss";
+@import "../components/PrivacySection/style.scss";
+
+
+// - Pages
+@import "../pages/coming-soon/style.scss";
+@import "../pages/home/style.scss";
+@import "../pages/about-us/style.scss";
+@import "../pages/contact-us/style.scss";
+@import "../pages/book-a-demo/style.scss";
+@import "../pages/sign-up/style";
+@import "../pages/innovators/style.scss";
+@import "../pages/corporates/style.scss";
+@import "../pages/ressources/style.scss";
+@import "../pages/ressources/[id]/style.scss";
+@import "../pages/explore-challenges/style.scss";
+@import "../pages/privacy-policy/style.scss";

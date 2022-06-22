@@ -1,0 +1,83 @@
+.JourneySteps {
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
+  &__head {
+    max-width: 68.9rem;
+  }
+  &__body {
+    position: relative;
+  }
+
+  .CardBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+    position: relative;
+    padding: 4.5rem 0;
+
+    &__vs {
+      left: calc(50% - 0.5px);
+      height: 100%;
+      width: 1px;
+      background: #293347;
+      z-index: 1;
+      position: absolute;
+      &--top {
+        height: 50%;
+        transform: translateY(50%);
+      }
+      &--bottom {
+        height: 50%;
+        top: 0;
+      }
+    }
+    &__hide {
+      position: absolute;
+      width: 100px;
+      height: 50%;
+      background: white;
+      left: 50%;
+      bottom: 0;
+    }
+
+    &__col {
+      width: 50%;
+      &--right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+    &__dot {
+      height: 2.4rem;
+      width: 2.4rem;
+      border: 4px solid #ffffff;
+      background-color: #FCC657;
+      border-radius: 50%;
+      z-index: 2;
+    }
+    &__card {
+      background-color: #ffffff;
+      width: 41.8rem;
+      border-radius: 2rem;
+      padding: 3.3rem 4rem;
+      border: 1px solid #7f8591;
+      transition: background-color 0.4s;
+      &--dark {
+        background-color: transparent;
+      }
+      &:hover {
+        background-color: #FCC657;
+        cursor: pointer;
+      }
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

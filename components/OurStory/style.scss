@@ -1,0 +1,23 @@
+.OurStory {
+  display: flex;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+  &__head {
+    flex-basis: 35rem;
+    @media (max-width: 500px) {
+      flex-basis: 100%;
+      margin-bottom: 3rem;
+    }
+    p {
+      margin-top: -1rem;
+    }
+  }
+
+  &__para {
+    flex-basis: calc(100% - 35rem);
+    @media (max-width: 500px) {
+      flex-basis: 100%;
+    }
+  }
+}
